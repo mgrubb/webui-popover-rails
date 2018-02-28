@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    webui-popover-rails (1.2.18)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (12.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (< 2.00)
+  rake (< 13.0)
+  webui-popover-rails!
+
+BUNDLED WITH
+   1.16.0
