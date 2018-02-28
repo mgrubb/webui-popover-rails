@@ -1,5 +1,3 @@
-require 'webui-popover-rails/version'
-
 module Webui
   module Popover
     module Rails

@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "webui/popover/rails/version"
+require "webui-popover-rails/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "webui-popover-rails"
@@ -13,9 +13,10 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/mgrubb/webui-popover-rails"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
+  spec.files         = Dir["{lib,app}/**/*"] + ["LICENSE.txt", "README.md", "CODE_OF_CONDUCT.md"]
+  #  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+  #  f.match(%r{^(test|spec|features)/})
+  #end
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
